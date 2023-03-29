@@ -1,0 +1,70 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: PivotGrid_UpdatingManager
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/PivotGrid_WF/PivotGrid_UpdatingManager
+                    development
+                    svn,Common/Keys;shared-base,null;shared-windows,null;svn,Base/Grid.Base/Src;grid-windows,null;svn,Base/SpellChecker.Base/Src;svn,Base/Tools.Base/Src;tools-windows,null;pivotanalysis-base,null;svn,Base/Linq.Base/Src;svn,Windows/PivotAnalysis.Windows/Src;pivotchart-windows,null,svn,Base/Chart.Base/Src;chart-winforms,null'
+     
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: PivotGrid_UpdatingManager
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+        
+
+- job: PivotGrid_WF
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/PivotGrid_WF/PivotGrid_WF
+                    development
+                    svn,Common/Keys;shared-base,null;shared-windows,null;svn,Base/Grid.Base/Src;grid-windows,null;svn,Base/SpellChecker.Base/Src;svn,Base/Tools.Base/Src;tools-windows,null;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Grouping.Base/Src;svn,Windows/Grouping.Windows/Src;svn,Windows/Grid.Grouping.Windows/Src;svn,Base/Chart.Base/Src;svn,Windows/Chart.Windows/Src;compression,null;xlsio,null;svn,Windows/XlsIO.Windows/Src;svn,Windows/GridConverter.Windows/Src;pdf,null;pivotanalysis-base,null;svn,Base/Linq.Base/Src;svn,Windows/PivotAnalysis.Windows/Src;officechart,null;pdf,null;svn,Windows/GridHelperClasses.Windows/Src;svn,Windows/PivotShared.Windows/Src;svn,Base/Linq.Base/Src'
+    
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: PivotGrid_WF
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true

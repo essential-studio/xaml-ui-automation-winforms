@@ -1,0 +1,68 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: SfSpreadsheet_WF_KBSamples
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Spreadsheet_WF/SfSpreadsheet_WF_KBSamples
+                    development
+                    shared-base,null;core-winforms,null;gridcommon-xaml,null;shared-windows,null;grid-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Shared.Base/Src;svn,Base/SpellChecker.Base/Src;svn,Base/Chart.Base/Src;datasource-winforms,null;calculate-base,null;compression-base,null;xlsio-base,null;spreadsheet-windows,null;spreadsheethelper-xaml,null;tools-windows,null;democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfSpreadsheet_WF_KBSamples  
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+        
+- job: Spreadsheet_WF_Jira_Issues
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Spreadsheet_WF/Spreadsheet_WF_Jira_Issues
+                    development
+                    shared-base,null;core-winforms,null;gridcommon-xaml,null;shared-windows,null;grid-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Shared.Base/Src;svn,Base/SpellChecker.Base/Src;svn,Base/Chart.Base/Src;datasource-winforms,null;calculate-base,null;compression-base,null;xlsio-base,null;spreadsheet-windows,null;spreadsheethelper-xaml,null;tools-windows,null;democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Spreadsheet_WF_Jira_Issues
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
