@@ -1,0 +1,389 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: BusyIndicator_Jira2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/BusyIndicator_Jira2019
+                    development
+                    shared-base,null;core-winforms,null'                     
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: BusyIndicator_Jira2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfComboBox_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfComboBox_Jira_2019 
+                    development
+                    shared-base,null;core-winforms,null;sfinput-winforms,null;data-xaml,null;datasource-xaml,null;gridcommon-xaml,null;listview-winforms,null;datagrid-winforms,null;syncfusion.office2016theme.winforms,null;syncfusion.office2019theme.winforms,null'                     
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfComboBox_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfDataGrid_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2019 
+                    development
+                    shared-base,null;grid-windows,null;tools-windows,null;core-winforms,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,
+                    null
+                    false'                      
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDataGrid_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfDataGrid_jira_2019_2
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-2 
+                    development
+                    shared-base,null;grid-windows,null;tools-windows,null;core-winforms,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,
+                    null
+                    false'                     
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDataGrid_jira_2019_2
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfDataGrid_jira_2019_3
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-3 
+                    development
+                    shared-base,null;grid-windows,null;tools-windows,null;core-winforms,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,null;syncfusion.office2016theme.winforms,null;syncfusion.office2019theme.winforms,
+                    null
+                    false'                     
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDataGrid_jira_2019_3
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfDataGrid_jira_2019_4
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-4 
+                    development
+                    shared-base,null;grouping-base,null;grid-windows,null;tools-windows,null;core-winforms,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,
+                    null
+                    false'                     
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDataGrid_jira_2019_4
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfDataGrid_Jira_2021
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2021 
+                    development
+                    shared-base,null;democommon-windows,null;core-winforms,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;shared-windows,null;grid-windows,null;spellchecker-base,null;data-xaml,null;datasource-xaml,null;gridcommon-xaml,null;tools-windows,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,null;syncfusion.office2016theme.winforms,null;syncfusion.office2019theme.winforms,null;syncfusion.highcontrasttheme.winforms,null'                    
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDataGrid_Jira_2021
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfDataPager_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataPager_Jira_2019 
+                    development
+                    shared-base,null;core-winforms,null;data-xaml,null;datasource-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,null;syncfusion.office2016theme.winforms,null'                     
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDataPager_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfForm_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfForm_Jira_2019 
+                    development
+                    shared-base,null;core-winforms,null;shared-windows,null;grid-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;spellchecker-base,null;tools-windows,null'                      
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfForm_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfScrollFrame_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfScrollFrame_Jira_2019 
+                    development
+                    shared-base,null;core-winforms,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,null'                     
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfScrollFrame_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: TabbedForm_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/TabbedForm_Jira_2019 
+                    development
+                    shared-base,null;core-winforms,null;shared-windows,null;grid-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;spellchecker-base,null;tools-windows,null'                
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TabbedForm_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
+- job: SfDataGrid_Jira_2022
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2022
+                    development
+                    shared-base,null;grid-windows,null;tools-windows,null;core-winforms,null;sfinput-winforms,null;listview-winforms,null;datagrid-winforms,
+                    null
+                    false'                     
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDataGrid_Jira_2022
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
