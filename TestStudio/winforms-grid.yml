@@ -9,7 +9,7 @@ jobs:
 - job: GGC_Jira_MT_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -42,7 +42,7 @@ jobs:
 - job: GridControl_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -73,7 +73,7 @@ jobs:
 - job: GridGrouping_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -106,7 +106,7 @@ jobs:
 - job: GridGroupingControl_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -139,7 +139,7 @@ jobs:
 - job: WF_CR_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
