@@ -9,7 +9,7 @@ jobs:
 - job: BusyIndicator_Jira2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -40,7 +40,7 @@ jobs:
 - job: SfComboBox_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -71,7 +71,7 @@ jobs:
 - job: SfDataGrid_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -104,7 +104,7 @@ jobs:
 - job: SfDataGrid_jira_2019_2
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -137,7 +137,7 @@ jobs:
 - job: SfDataGrid_jira_2019_3
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -170,7 +170,7 @@ jobs:
 - job: SfDataGrid_jira_2019_4
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -203,7 +203,7 @@ jobs:
 - job: SfDataGrid_Jira_2021
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -234,7 +234,7 @@ jobs:
 - job: SfDataPager_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -265,7 +265,7 @@ jobs:
 - job: SfForm_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -296,7 +296,7 @@ jobs:
 - job: SfScrollFrame_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -327,7 +327,7 @@ jobs:
 - job: TabbedForm_Jira_2019
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -358,7 +358,7 @@ jobs:
 - job: SfDataGrid_Jira_2022
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
