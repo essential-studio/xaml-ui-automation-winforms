@@ -1,0 +1,129 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: EditOne
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Edit_WF/EditOne
+                    development
+                    compression,null;officechart,null;docio,null;shared-base,null;gauge-windows,null;shared-windows,null;democommon-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;grid-windows,null;grouping-base,null;grid-grouping-windows,null;spellchecker-base,null;tools-windows,null;syncfusion-core,null;edit-windows,null;svn,Base/Chart.Base/Src;svn,Windows/Chart.Windows/Src;PDF.Base,null;pivotanalysis-base,null;svn,Base/Linq.Base/Src;pivotanalysis-windows,null;svn,Windows/Grouping.Windows/Src;gridconverter-windows,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: EditOne
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: EditThree
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Edit_WF/EditThree
+                    development
+                    compression,null;officechart,null;docio,null;shared-base,null;gauge-windows,null;shared-windows,null;democommon-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;grid-windows,null;grouping-base,null;grid-grouping-windows,null;spellchecker-base,null;tools-windows,null;syncfusion-core,null;edit-windows,null;svn,Base/Chart.Base/Src;svn,Windows/Chart.Windows/Src;PDF.Base,null;pivotanalysis-base,null;svn,Base/Linq.Base/Src;pivotanalysis-windows,null;svn,Windows/Grouping.Windows/Src;gridconverter-windows,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: EditThree
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true 
+
+- job: EditTwo 
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Edit_WF/EditTwo 
+                    development
+                    compression,null;officechart,null;docio,null;shared-base,null;gauge-windows,null;shared-windows,null;democommon-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;grid-windows,null;grouping-base,null;grid-grouping-windows,null;spellchecker-base,null;tools-windows,null;syncfusion-core,null;edit-windows,null;svn,Base/Chart.Base/Src;svn,Windows/Chart.Windows/Src;PDF.Base,null;pivotanalysis-base,null;svn,Base/Linq.Base/Src;pivotanalysis-windows,null;svn,Windows/Grouping.Windows/Src;gridconverter-windows,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: EditTwo 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ProjectOne 
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Edit_WF/ProjectOne
+                    development
+                    compression,null;officechart,null;docio,null;shared-base,null;gauge-windows,null;shared-windows,null;democommon-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;grid-windows,null;grouping-base,null;grid-grouping-windows,null;spellchecker-base,null;tools-windows,null;syncfusion-core,null;edit-windows,null;svn,Base/Chart.Base/Src;svn,Windows/Chart.Windows/Src;PDF.Base,null;pivotanalysis-base,null;svn,Base/Linq.Base/Src;pivotanalysis-windows,null;svn,Windows/Grouping.Windows/Src;gridconverter-windows,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ProjectOne
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true 
+

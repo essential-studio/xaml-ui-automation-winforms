@@ -1,0 +1,308 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: ChartOntime_1
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_1
+                    development
+                    svn,Common/Keys;svn,Base/Linq.Base/Src;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;shared-base,null;shared-windows,null;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Chart.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;grouping-base,null;chart-winforms,null;grid-windows,null;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;gridhelperclasses-windows,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_1
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ChartOntime_2
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_2
+                    development
+                    svn,Common/Keys;svn,Base/Linq.Base/Src;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;shared-base,null;shared-windows,null;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Chart.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;grouping-base,null;svn,Base/MIME.Base/Src;svn,Base/Scripting.Base/Src;htmlui-windows,null;chart-winforms,null;grid-windows,null;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;schedule-base,null;schedule-windows,null;pivotanalysis-windows,null;gridhelperclasses-windows,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_2
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ChartOntime_3
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_3
+                    development
+                    svn,Common/Keys;svn,Base/Linq.Base/Src;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;shared-base,null;shared-windows,null;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Chart.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;grouping-base,null;chart-winforms,null;grid-windows,null;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;gridhelperclasses-windows,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_3
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ChartOntime_4 
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_4 
+                    development
+                    svn,Common/Keys;compression,null;shared-base,null;shared-windows,null;svn,Base/Chart.Base/Src;grouping-base,null;chart-winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_4
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true 
+
+- job: ChartOntime_5
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_5
+                    development
+                    svn,Common/Keys;shared-base,null;shared-windows,null;svn,Base/Chart.Base/Src;grouping-base,null;chart-winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_5
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ChartOntime_6
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_6
+                    development
+                    svn,Common/Keys;svn,Base/DLS.Base/Src;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;shared-base,null;shared-windows,null;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Chart.Base/Src;grouping-base,null;chart-winforms,null;grid-windows,null;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_6
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+        
+- job: ChartOntime_7
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_7
+                    development
+                    svn,Common/Keys;shared-base,null;shared-windows,null;svn,Base/Grid.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Chart.Base/Src;grouping-base,null;chart-winforms,null;grid-windows,null;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;spellchecker-base,null;tools-windows,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_7
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ChartOntime_8
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_8
+                    development
+                    svn,Common/Keys;shared-base,null;shared-windows,null;svn,Base/Chart.Base/Src;grouping-base,null;chart-winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_8
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ChartOntime_9
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_9
+                    development
+                    svn,Common/Keys;shared-base,null;shared-windows,null;svn,Base/Chart.Base/Src;grouping-base,null;chart-winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_9
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+
+- job: ChartOntime_10
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-winforms-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Chart_WF/ChartOntime_10
+                    development
+                    svn,Common/Keys;compression,null;shared-base,null;shared-windows,null;svn,Base/Chart.Base/Src;grouping-base,null;chart-winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChartOntime_10
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true        
