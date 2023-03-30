@@ -55,7 +55,8 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/DockingManagerFive 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Chart.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;compression,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;pdf,null;xlsio,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null'
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Chart.Base/Src;svn,Windows/Grouping.Windows/Src;svn,Base/Linq.Base/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;
+                    gridconverter-windows,null;spellchecker-base,null;tools-windows,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -86,7 +87,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/DockingManagerFour 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;compression,null;calculate,null;spellchecker-base,null;tools-windows,null;edit-windows,null;svn,Common/Keys;svn,Windows/Scripting.Windows/Src' 
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;compression,null;calculate,null;spellchecker-base,null;tools-windows,null;edit-windows,null;svn,Windows/Scripting.Windows/Src;htmlui windows,null' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -148,7 +149,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/DockingManagerOne
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Scripting.Base/Src;htmlui windows,null;spellchecker-base,null;tools-windows,null;edit-windows,null;syncfusion-core,null;svn,Common/Keys;svn,Windows/Scripting.Windows/Src'
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Scripting.Base/Src;htmlui windows,null;spellchecker-base,null;tools-windows,null;edit-windows,null;syncfusion-core,null;svn,Windows/Scripting.Windows/Src'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -179,7 +180,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/DockingManagerSeven 
                     development
-                    shared-base,null;shared-windows,null;democommon-windows,null;grid-windows,null;spellchecker-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;tools-windows,null'
+                    shared-base,null;shared-windows,null;democommon-windows,null;grid-windows,null;spellchecker-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;tools-windows,null;syncfusion-core,null'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -210,7 +211,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/DockingManagerSix 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Chart.Base/Src;svn,Base/Linq.Base/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;compression,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;pdf,null;xlsio,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;edit-windows,null'
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Chart.Base/Src;svn,Base/Linq.Base/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;edit-windows,null'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -241,7 +242,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/DockingManagerThree 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Scripting.Base/Src;syncfusion-core,null;htmlui windows,null;spellchecker-base,null;tools-windows,null;svn,Common/Keys;svn,Windows/Scripting.Windows/Src'
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Scripting.Base/Src;syncfusion-core,null;htmlui windows,null;spellchecker-base,null;tools-windows,null;svn,Windows/Scripting.Windows/Src'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -303,7 +304,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/DockingPackage 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Base/Linq.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;compression,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;pdf,null;xlsio,null;officechart,null;docio,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;edit-windows,null;gridhelperclasses-windows,null;svn,Common/Keys;svn,Windows/PDF.Windows/Src;svn,Windows/XlsIO.Windows/Src;svn,Windows/DocIO.Windows/Src;svn,Base/DLS.Base/Src'
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Base/Linq.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;edit-windows,null;gridhelperclasses-windows,null;svn,Windows/PDF.Windows/Src;svn,Windows/XlsIO.Windows/Src;svn,Windows/DocIO.Windows/Src;svn,Base/DLS.Base/Src'
                     
   - task: PublishBuildArtifacts@1
     inputs:
