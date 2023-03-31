@@ -54,7 +54,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/Customer Bug/2016_Volume_3 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Windows/Diagram.Utility.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Base/Linq.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;gridconverter-windows,null;gauge-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;edit-windows,null;gridhelperclasses-windows,null;maps-winforms,null;olap-base,null;ocrprocessor,null;presentation,null;svn,Windows/Scripting.Windows/Src;svn,Base/DICOM.Base/Src'
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Windows/Diagram.Utility.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Base/Linq.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;gridconverter-windows,null;gauge-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;edit-windows,null;gridhelperclasses-windows,null;maps-winforms,null;ocrprocessor,null;presentation,null;svn,Windows/Scripting.Windows/Src;svn,Base/DICOM.Base/Src'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -85,7 +85,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/Customer Bug/WorkAround 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Windows/Diagram.Utility.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Base/Linq.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;gridconverter-windows,null;gauge-windows,null;spellchecker-base,null;tools-windows,null;core-winforms,null;sfinput-winforms,null;datasource-xaml,null;gridcommon-xaml,null;listview-winforms,null;pivotanalysis-windows,null;spreadsheet-xaml,null;edit-windows,null;gridhelperclasses-windows,null;maps-winforms,null;olap-base,null;ocrprocessor,null;presentation,null;svn,Windows/Scripting.Windows/Src;svn,Base/DICOM.Base/Src' 
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Base/Diagram.Base/Src;svn,Windows/Diagram.Windows/Src;svn,Windows/Diagram.Utility.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Scripting.Base/Src;svn,Base/Linq.Base/Src;svn,Windows/Grouping.Windows/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;gridconverter-windows,null;gauge-windows,null;spellchecker-base,null;tools-windows,null;core-winforms,null;sfinput-winforms,null;datasource-xaml,null;gridcommon-xaml,null;listview-winforms,null;pivotanalysis-windows,null;spreadsheet-xaml,null;edit-windows,null;gridhelperclasses-windows,null;maps-winforms,null;ocrprocessor,null;presentation,null;svn,Windows/Scripting.Windows/Src;svn,Base/DICOM.Base/Src' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -175,7 +175,8 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/Localization 
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    null
+                    false' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -266,7 +267,8 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/Performance 
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    null
+                    false' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
