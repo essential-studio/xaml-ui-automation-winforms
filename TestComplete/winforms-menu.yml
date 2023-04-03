@@ -24,7 +24,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WF/MenuPackage 
                     development
-                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Windows/Grouping.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Linq.Base/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;olap-base,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;pdfviewer,null;svn,Windows/XlsIO.Windows/Src;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;edit-windows,null;gridhelperclasses-windows,null'
+                    shared-base,null;democommon-windows,null;shared-windows,null;grid-windows,null;grouping-base,null;svn,Common/Keys;svn,Base/Grid.Base/Src;svn,Base/Tools.Base/Src;svn,Base/Grid.Grouping.Base/Src;svn,Windows/Grouping.Windows/Src;svn,Base/Chart.Base/Src;svn,Base/Linq.Base/Src;grid-grouping-windows,null;chart-winforms,null;syncfusion-core,null;compression,null;barcode,null;pdf,null;officechart,null;docio,null;calculate,null;pivotanalysis-base,null;compoundfile,null;odf,null;xlsio,null;pdfviewer,null;svn,Windows/XlsIO.Windows/Src;gridconverter-windows,null;spellchecker-base,null;tools-windows,null;pivotanalysis-windows,null;edit-windows,null;gridhelperclasses-windows,null'
                     
   - task: PublishBuildArtifacts@1
     inputs:
