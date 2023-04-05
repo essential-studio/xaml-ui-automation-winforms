@@ -36,7 +36,7 @@ jobs:
       Contents: '**/*'
       RemoveSourceFolder: true
 
-- job: 2016_Volume_3
+- job: Jira2016_Volume_3
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-winforms-vmss"
