@@ -37,7 +37,7 @@ jobs:
       Contents: '**/*'
       RemoveSourceFolder: true
 
-- job: ComboBoxAdv
+- job: ComboStabilityComboBoxAdv
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
