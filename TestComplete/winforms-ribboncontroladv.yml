@@ -9,7 +9,7 @@ jobs:
 - job: Ribbon
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -40,7 +40,7 @@ jobs:
 - job: RibbonFour 
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -71,7 +71,7 @@ jobs:
 - job: RibbonOne
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -102,7 +102,7 @@ jobs:
 - job: RibbonThree
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -133,7 +133,7 @@ jobs:
 - job: RibbonTwo
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1

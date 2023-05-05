@@ -9,7 +9,7 @@ jobs:
 - job: DockingManagerEight
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -40,7 +40,7 @@ jobs:
 - job: DockingManagerFive
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -72,7 +72,7 @@ jobs:
 - job: DockingManagerFour
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -103,7 +103,7 @@ jobs:
 - job: DockingManagerNine
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -134,7 +134,7 @@ jobs:
 - job: DockingManagerOne
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -165,7 +165,7 @@ jobs:
 - job: DockingManagerSeven 
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -196,7 +196,7 @@ jobs:
 - job: DockingManagerSix
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -227,7 +227,7 @@ jobs:
 - job: DockingManagerThree 
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -258,7 +258,7 @@ jobs:
 - job: DockingManagerTwo 
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -289,7 +289,7 @@ jobs:
 - job: DockingPackage
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
