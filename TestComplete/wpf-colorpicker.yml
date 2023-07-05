@@ -40,7 +40,7 @@ jobs:
 - job: ColorPicker_BuildSample   
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -55,7 +55,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ColorPicker_BuildSample 
                     development 
-                    shared-wpf,null;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src;svn,WPF/VectorImages.WPF/Src'
+                    shared-wpf,WPF-833916--Unable-to-perform-the-press-and-hold-operation-when-selecting-a-color-in-the-ColorPicker;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src;svn,WPF/VectorImages.WPF/Src'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -70,7 +70,7 @@ jobs:
 - job: colorpickerpalette   
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -85,7 +85,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/colorpickerpalette 
                     development 
-                    shared-wpf,null;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src;svn,WPF/Tools.MVVM.WPF/Src;syncfusion-core,null;svn,WPF/VectorImages.WPF/Src'
+                    shared-wpf,WPF-833916--Unable-to-perform-the-press-and-hold-operation-when-selecting-a-color-in-the-ColorPicker;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src;svn,WPF/Tools.MVVM.WPF/Src;syncfusion-core,null;svn,WPF/VectorImages.WPF/Src'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -100,7 +100,7 @@ jobs:
 - job: ColorPickerPalette_BuildSample   
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -115,7 +115,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ColorPickerPalette_BuildSample 
                     development 
-                    shared-wpf,null;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src;svn,WPF/Tools.MVVM.WPF/Src'
+                    shared-wpf,WPF-833916--Unable-to-perform-the-press-and-hold-operation-when-selecting-a-color-in-the-ColorPicker;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src;svn,WPF/Tools.MVVM.WPF/Src'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -130,7 +130,7 @@ jobs:
 - job: coloredit   
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -145,7 +145,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/coloredit 
                     development 
-                    shared-wpf,null;tools-wpf,null;sfinput-xaml,null;syncfusion-core,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src'
+                    shared-wpf,WPF-833916--Unable-to-perform-the-press-and-hold-operation-when-selecting-a-color-in-the-ColorPicker;tools-wpf,null;sfinput-xaml,null;syncfusion-core,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -160,7 +160,7 @@ jobs:
 - job: ColorEdit_BuildSample   
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -175,7 +175,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ColorEdit_BuildSample 
                     development 
-                    shared-wpf,null;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src'
+                    shared-wpf,WPF-833916--Unable-to-perform-the-press-and-hold-operation-when-selecting-a-color-in-the-ColorPicker;tools-wpf,null;sfinput-xaml,null;propertygrid-wpf,null;svn,Common/Keys;svn,WPF/Shared.MVVM.WPF/Src'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -190,7 +190,7 @@ jobs:
 - job: sfcolorpalette   
   timeoutInMinutes: 0
   pool:
-    name: "Desktop-xaml-vmss"
+    name: "Desktop-xaml-winforms-vmss"
 
   steps:
   - task: ScreenResolutionUtility@1
@@ -205,7 +205,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfcolorpalette 
                     development 
-                    shared-wpf,null;tools-wpf,null;sfinput-xaml,null;sfshared-xaml,null;sfcolorpickers-xaml,null;sfradialmenu-xaml,null'
+                    shared-wpf,WPF-833916--Unable-to-perform-the-press-and-hold-operation-when-selecting-a-color-in-the-ColorPicker;tools-wpf,null;sfinput-xaml,null;sfshared-xaml,null;sfcolorpickers-xaml,null;sfradialmenu-xaml,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
